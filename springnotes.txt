@@ -22,4 +22,4 @@ private FortuneService fortuneService;
 NoUniqueBeanDefinitionException
 injection will fail if there are multiple bean implementations, use @Qualifire("beanid")
 
-@Qualifier uses beanid not class name remeber that
+@Qualifier uses bean id, not classname, remember that
