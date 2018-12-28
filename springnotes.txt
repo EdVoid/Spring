@@ -15,4 +15,11 @@ I personally prefer to use the @Autowired annotation because it makes the code m
 
 
 Field injection, uses Java Reflection, configure dependency using Autowired annotation, applied directly to the field
-no setter methods.
+no setter me
+@Autowired
+private FortuneService fortuneService;
+
+NoUniqueBeanDefinitionException
+injection will fail if there are multiple bean implementations, use @Qualifire("beanid")
+
+@Qualifier uses beanid not class name remeber that
