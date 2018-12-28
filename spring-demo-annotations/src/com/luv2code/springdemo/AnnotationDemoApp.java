@@ -13,6 +13,7 @@ public class AnnotationDemoApp {
 		Coach ssCoach = context.getBean("startingStrenghtCoach", Coach.class);
 		// call a method on the bean
 			System.out.println(tennisCoach.getDailyWorkout());
+			System.out.println(tennisCoach.getDailyFortune());
 			System.out.println("oh shit, rippletits is comming.... \n"+ ssCoach.getDailyWorkout());
 			
 		// close context

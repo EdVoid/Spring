@@ -1,0 +1,14 @@
+Spring uses Singletons by default, good for Stateless beans
+
+prototype scope produces one bean per request, good for stateful beans
+
+git pull = fetch + merge
+
+
+default bean id is class name starting with lower case
+
+Section 1.9.2: Autowired
+
+As of Spring Framework 4.3, an @Autowired annotation on such a constructor is no longer necessary if the target bean only defines one constructor to begin with. However, if several constructors are available, at least one must be annotated to teach the container which one to use.
+
+I personally prefer to use the @Autowired annotation because it makes the code more readable. But as mentioned, the @Autowired is not required for this scenario.
