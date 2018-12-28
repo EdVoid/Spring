@@ -15,6 +15,7 @@ public class AnnotationDemoApp {
 			System.out.println(tennisCoach.getDailyWorkout());
 			System.out.println(tennisCoach.getDailyFortune());
 			System.out.println("oh shit, rippletits is comming.... \n"+ ssCoach.getDailyWorkout());
+			System.out.println(ssCoach.getDailyFortune());
 			
 		// close context
 			context.close();

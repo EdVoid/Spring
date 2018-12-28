@@ -1,10 +1,11 @@
 package com.luv2code.springdemo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class StartingStrenghtCoach implements Coach {
-
+    FortuneService fortune;
 	@Override
 	public String getDailyWorkout() {
 		return "SQUATS AND OATS, LOWER LOWER LOOOOOWER!!!!!!";
@@ -12,8 +13,13 @@ public class StartingStrenghtCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		return fortune.getFortune();
+	}
+	
+	@Autowired
+	public void doSomeCrazyStuff(FortuneService fService) {
+		System.out.println(">> StartingStrenghtCoach: inisde random method with Autowired");
+		fortune = fService;
 	}
 
 }

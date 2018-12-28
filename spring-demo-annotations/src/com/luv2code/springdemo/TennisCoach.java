@@ -5,14 +5,19 @@ import org.springframework.stereotype.Component;
 
 @Component("thatSillyCoach")
 public class TennisCoach implements Coach {
-	
+	@Autowired
 	private FortuneService fortuneService;
 	
-	
-	@Autowired 
-	public TennisCoach(FortuneService theFortuneService) {
-		fortuneService = theFortuneService;
+	public TennisCoach() {
+		System.out.println(">> TennisCoach: inisde default constructor");
 	}
+	
+//	@Autowired 
+//	public TennisCoach(FortuneService theFortuneService) {
+//		fortuneService = theFortuneService;
+//	}
+//	
+	
 	
 	@Override
 	public String getDailyWorkout() {
@@ -25,5 +30,11 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+//	
+//	@Autowired 
+//	public void setFortuneService(FortuneService fortuneService) {
+//		System.out.println(">> TennisCoach: inisde setFortuneService method");
+//		this.fortuneService=fortuneService;
+//	}
            
 }
