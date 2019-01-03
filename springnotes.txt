@@ -23,3 +23,7 @@ NoUniqueBeanDefinitionException
 injection will fail if there are multiple bean implementations, use @Qualifire("beanid")
 
 @Qualifier uses bean id, not classname, remember that
+
+for the special case of when BOTH the first and second characters of the class name are upper case, then the name is NOT converted.
+For the case of RESTFortuneService
+RESTFortuneService --> RESTFortuneService
