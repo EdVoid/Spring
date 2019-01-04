@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("thatSillyCoach")
-@Scope("Prototype")
+@Scope("prototype")
 public class TennisCoach implements Coach {
 	@Autowired
 	@Qualifier("randomFortuneService")
