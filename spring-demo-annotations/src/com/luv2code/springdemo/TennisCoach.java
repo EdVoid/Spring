@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Scope("singleton")
 public class TennisCoach implements Coach {
 	@Autowired
-	@Qualifier("randomFortuneService")
+	@Qualifier("fileFortuneService")
 	private FortuneService fortuneService;
 	
 	public TennisCoach() {
