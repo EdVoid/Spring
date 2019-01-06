@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Value;
 //@Component
 public class SwimCoach implements Coach {
 	
+	
+	//field level injection
 	@Value("${coach.email}")
 	private String email;
 	
@@ -29,6 +31,10 @@ public class SwimCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
+	}
+	
+	public String cheerTeam() {
+		return ("GO!!!!!! "+team);
 	}
 
 }
