@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>new</project>
+		<project>spring-mvc-demo</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
