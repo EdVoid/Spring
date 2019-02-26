@@ -15,7 +15,7 @@
 		<p>
 		<img src="${pageContext.request.contextPath}/resources/images/first fire.png"/>
 		</p>		
-		<a href="showForm">Hello World Form</a>
+		<a href="hello/showForm">Hello World Form</a>
 		
 		<input type="button" onclick="doSomeWork()" value ="Click Me"/>
 	</body>

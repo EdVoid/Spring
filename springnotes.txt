@@ -89,3 +89,5 @@ You need to use the JSP expression ${pageContext.request.contextPath} to access 
 
 
 --------------------------------------------------------------------------------
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
