@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.luv2code.springdemo.mvc.model.Student;
+
 
 
 @Controller
@@ -14,11 +16,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HelloWorldController {
 	
 	// controller method to show the initial form
-	@RequestMapping("/showForm")
-	public String showForm() {
-		return "helloworld-form";
-	}
+//	@RequestMapping("/showForm")
+//	public String showForm() {
+//		return "helloworld-form";
+//	}
+//	
+	//controller method to show the initial form using add model attribute
 	
+	@RequestMapping("/showForm")
+	public String showForm(Model theModel) {
+		theModel.addAttribute("student", new Student());
+		
+		return "student-form";
+	}
 	
 	// controller method to process the form
 	@RequestMapping("/processForm")

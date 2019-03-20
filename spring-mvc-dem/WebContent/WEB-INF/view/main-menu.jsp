@@ -17,6 +17,10 @@
 		</p>		
 		<a href="hello/showForm">Hello World Form</a>
 		
+		<br><br>
+		
+		<a href="student/showForm">Student Form</a>
+		
 		<input type="button" onclick="doSomeWork()" value ="Click Me"/>
 	</body>
 </html>
