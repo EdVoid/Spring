@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.luv2code.springdemo.mvc.model.Student;
 
 @Controller
-@RequestMapping("/Student")
+@RequestMapping("/student")
 public class StudentController {
 	
 	@RequestMapping("/showForm")
